@@ -9,13 +9,20 @@ void main() {
           title: Text('Dicee'),
           backgroundColor: Colors.red,
         ),
-        body: DicePage(),
+        body: DiceApp(),
       ),
     ),
   );
 }
 
-class DicePage extends StatelessWidget {
+class DiceApp extends StatefulWidget {
+  const DiceApp({Key key}) : super(key: key);
+
+  @override
+  State<DiceApp> createState() => _DiceAppState();
+}
+
+class _DiceAppState extends State<DiceApp> {
   @override
   Widget build(BuildContext context) {
     return Center(
